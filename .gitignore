@@ -3,3 +3,7 @@
 Homestead.json
 Homestead.yaml
 .env
+node_modules
+public/css
+public/js
+terminal.glue
