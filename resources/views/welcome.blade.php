@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Home')
+@section('title', 'WashU ACM')
 
 @section('content')
 <!-- Main jumbotron for a primary marketing message or call to action -->

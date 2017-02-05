@@ -42,7 +42,7 @@ gulp.task('bsync', ['serve', '__bsync-watch'], function(){
 	browserSync({
 		proxy: 'localhost:'.concat(__srvPort),
 		port: 80,
-		open: "ui",
+		open: __bsOpen,
 		notify: false,
 		browser: "chrome",
 		files: [
