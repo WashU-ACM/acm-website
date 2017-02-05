@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 
 // Configuration variables
 var __bsPort = 80,
-	__bsOpen = "ui", // Change "ui" to false if you don't want the UI to 
+	__bsOpen = "ui", // Change "ui" to false if you don't want the UI to
 					// pop up every time that browserSync starts
 	__srvPort = 8080;
 
@@ -41,7 +41,7 @@ gulp.task('serve', function(){
  */
 gulp.task('bsync', ['serve', '__bsync-watch'], function(){
 	browserSync({
-		proxy: 'localhost:'concat(__srvPort),
+		proxy: 'localhost:'.concat(__srvPort),
 		port: 80,
 		open: "ui",
 		notify: false,
