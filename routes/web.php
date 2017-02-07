@@ -14,3 +14,11 @@
 $app->get('/', function (){
     return view('welcome');
 });
+
+$app->get('/icpc', function (){
+    return view('icpc');
+});
+
+$app->get('/officers', function (){
+    return view('officers');
+});
