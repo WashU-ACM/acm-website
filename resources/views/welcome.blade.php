@@ -35,7 +35,7 @@
   <hr>
 
   <footer>
-    <p>&copy; Company 2017</p>
+    <p>2017 &copy; WashU ACM </p>
   </footer>
 </div> <!-- /container -->
 @endsection
