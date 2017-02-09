@@ -7,3 +7,4 @@ node_modules
 public/css
 public/js
 terminal.glue
+.sass-cache/
