@@ -4,7 +4,7 @@ Powered by [Lumen](https://lumen.laravel.com).
 
 ## First things
 
-To get started with a developement server running on your localhost, use:
+To get started with a development server running on your localhost, use:
     php -S localhost:8000 -t public
 from the root of your project directory.
 
@@ -15,7 +15,7 @@ Make sure that you have Composer, NPM, and, of course, PHP installed. Because I 
 
 ## Gulp
 
-Gulp is pretty useful for developement work. Right now, I just have a few layers of Gulp rules set up. The ones that should be run as `gulp <rule>` are below:
+Gulp is pretty useful for development work. Right now, I just have a few layers of Gulp rules set up. The ones that should be run as `gulp <rule>` are below:
 
      scss - compile app.scss and place it in public
     watch - just watches all .scss files in assets for changes and
