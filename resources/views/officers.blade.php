@@ -56,7 +56,7 @@
 			<h5><span class="text-muted">Publicity</span></h5>
 		</div>
 		<div class="col-md-2">
-		 <svg src="..." alt="Jackie Wong" class="img-thumbnail">
+		 <img src="/images/officers/jackie.jpg" alt="Jackie Wong" class="img-thumbnail">
 		 <h4>Jackie Wong</h4>
 		 <h5><span class="text-muted">Freshman Outreach</span></h5>
 		</div>
@@ -69,8 +69,7 @@
 			<img src="/images/officers/john.jpg" alt="John Xiahou"  class="img-thumbnail">
 			<h4>John Xiahou</h4>
 			<h5><span class="text-muted">ICPC</span></h5>
-			<br><br>
-			<br><br>
+			<br><br><br>
 		</div>
 		<div class="col-md-2" style="margin:auto;text-align:center;">
 			<img src="/images/officers/david.jpg" alt="David Ayeke"  class="img-thumbnail">
