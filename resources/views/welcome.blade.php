@@ -28,7 +28,6 @@
     <div class="col-md-4">
       <div class="twitter-wrap">
       <a class="twitter-timeline" href="https://twitter.com/WashUACM">Tweets by WashUACM</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
     </div>
   </div>
 
