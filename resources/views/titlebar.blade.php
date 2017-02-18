@@ -6,13 +6,13 @@
     </button>
     <a href="/"><img src="/images/acm_logo_tablet.svg" alt="ACM"></a>
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item{{Request::is('/')?' active':''}}">
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item{{Request::is('icpc')?' active':''}}">
         <a class="nav-link" href="icpc">ICPC</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item{{Request::is('officers')?' active':''}}">
         <a class="nav-link" href="officers">Officers</a>
       </li>
       <li class="nav-item">
