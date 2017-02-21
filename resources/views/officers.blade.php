@@ -70,12 +70,22 @@
 			<h4>John Xiahou</h4>
 			<h5><span class="text-muted">ICPC</span></h5>
 		</div>
-		<div class="col-md-3" style="margin:auto;text-align:center;">
+		<div class="col-md-3">
+			<img src="/images/officers/rohit.jpg" alt="Rohit Kumar"  class="img-thumbnail">
+			<h4>Rohit Kumar</h4>
+			<h5><span class="text-muted">Secretary</span></h5>
+		</div>
+		<div class="col-md-3">
+			<img src="/images/officers/noah.jpg" alt="Noah Luddy"  class="img-thumbnail">
+			<h4>Noah Luddy</h4>
+			<h5><span class="text-muted">Historian</span></h5>
+		</div>
+		<div class="col-md-3">
 			<img src="/images/officers/dennis.jpg" alt="Dennis Cosgrove"  class="img-thumbnail">
 			<h4>Dennis Cosgrove</h4>
 			<h5><span class="text-muted">Faculty advisor</span></h5>
 		</div>
-		<div class="col-md-3" style="margin:auto;text-align:center;">
+		<div class="col-md-3">
 			<img src="/images/officers/david.jpg" alt="David Ayeke"  class="img-thumbnail">
 			<h4>David Ayeke</h4>
 			<h5><span class="text-muted">Eternal President &amp; Supreme Leader-for-Life</span></h5>
