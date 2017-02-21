@@ -6,7 +6,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="container">
-    <h1 class="display-3">Hello, world! We are ACM.</h1>
+    <h1 class="display-3">Hello, world! We are WashU ACM.</h1>
     <p>We are the Washington University in St. Louis' chapter of ACM, the Association for Computing Machinery. </p>
     <p><a class="btn btn-primary btn-md" href="https://www.acm.org/" role="button">Learn more about ACM &raquo;</a></p>
   </div>
@@ -15,15 +15,18 @@
 <div class="container">
   <!-- Example row of columns -->
   <div class="row">
-    <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+    <div class="col-md-8">
+      <h2>Welcome to WashU ACM</h2><br>
+      <p>ACM, the Association for Computing Machinery, is an international scientific and educational organization dedicated to advancing the arts, sciences, and applications of information technology. Here at Washington University we strive to be a resource for everyone, student, faculty, and staff, who has an interest in computing or computer science. </p>
+      <br><br>
+      <h3>Coming Events</h3>
+      <ul>
+        <li>Dev Team Regular Meeting</li>
+        <li>Thursday Tech Talk about Python programming by Roger Iyengar</li>
+        <li>EnWeek ACM Showcase</li>
+        <li>Invited Speaker: Richard Stallman</li>
+      </ul>
+      <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p>
    </div>
     <div class="col-md-4">
       <div class="twitter-wrap">

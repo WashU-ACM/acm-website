@@ -15,6 +15,10 @@ $app->get('/', function (){
     return view('welcome');
 });
 
+$app->get('/events', function (){
+    return view('events');
+});
+
 $app->get('/icpc', function (){
     return view('icpc');
 });
