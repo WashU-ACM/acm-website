@@ -23,8 +23,8 @@
       <!-- Heading: Upcoming Events -->
       <h3>Upcoming Events</h3>
       <ul>
-        <li>Dev Team Regular Meeting</li>
-        <li>Tuesday Tech Talk | Python: 0 to production</li>
+        <li>ACM Dev Team | <b>Master Command Line</b></li>
+        <li>Tuesday Tech Talk | <b>Python: 0 to production</b></li>
         <li>EnWeek ACM Showcase</li>
         <li>Invited Speaker: Richard Stallman</li>
       </ul>
