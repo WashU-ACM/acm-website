@@ -5,6 +5,16 @@
 @section('content')
 <div class="container">
 	<h1>Events</h1><br>
+	<!-- Large modal -->
+	<div id="modal-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+				<div class="modal-body">
+	        <img src="images/events/dt.png" height="auto" width="100%">
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<!-- Section: Upcoming -->
 	<h2>Upcoming</h2>
@@ -17,7 +27,21 @@
 				<h5><span class="badge badge-default">Dev Team</span></h5>
 			</div>
 			<div class="media">
-				<img class="d-flex align-self-center mr-3" src="images/events/dt.pdf" height="204.8" width="158.2">
+				<!-- Image 1 -->
+				<a class="d-flex align-self-center mr-3" role="button" data-toggle="modal"  data-target="#modal-1">
+					<img src="images/events/dt.png" height="204.8" width="158.2">
+				</a>
+				<!-- Modal 1 -->
+				<div id="modal-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">
+				    <div class="modal-content">
+							<div class="modal-body">
+				        <img src="images/events/dt.png" height="auto" width="100%">
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Details 1 -->
 				<div class="media-body">
 					<dl class="row">
 						<dd class="col-sm-12"><br></dd>
@@ -44,7 +68,21 @@
 					<h5><span class="badge badge-default">T3</span></h5>
 				</div>
 				<div class="media">
-					<img class="d-flex align-self-center mr-3" src="images/events/t3.png" height="204.8" width="158.2">
+					<!-- Image 2 -->
+					<a class="d-flex align-self-center mr-3" role="button" data-toggle="modal"  data-target="#modal-2">
+						<img src="images/events/t3.png" height="204.8" width="158.2">
+					</a>
+					<!-- Modal 2 -->
+					<div id="modal-2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-lg" role="document">
+					    <div class="modal-content">
+								<div class="modal-body">
+					        <img src="images/events/t3.png" height="auto" width="100%">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Details 2 -->
 					<div class="media-body">
 						<dl class="row">
 							<dd class="col-sm-12"><br></dd>
@@ -63,6 +101,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 		<br>
 
