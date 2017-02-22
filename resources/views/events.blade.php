@@ -107,7 +107,7 @@
 
 		<!-- Section: Calendar -->
 		<h2>Calendar</h2>
-		<iframe src="https://www.google.com/calendar/embed?src=washuacm%40gmail.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+		<iframe src="https://calendar.google.com/calendar/embed?src=su.wustl.edu_v3urbk68gh9g2g83db66su3erk%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 		<!-- Footer -->
 		@include('footer')
