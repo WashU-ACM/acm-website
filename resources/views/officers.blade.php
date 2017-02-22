@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 	<h1>2017 ACM Officers</h1>
-	<p class="lead">Bellow are the people who make WashU ACM what it is today. Checkout here for <a href="officers">Past ACM Officers</a>.</p>
+	<p class="lead">Bellow are the people who make WashU ACM what it is today. Checkout here for <a href="officers">Past ACM Officers</a>.</p><br>
 	<h2>Elected Officers</h2>
   <!-- Example row of columns -->
 	<br>

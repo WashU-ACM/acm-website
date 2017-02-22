@@ -16,13 +16,15 @@
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-8">
+      <!-- Heading: Welcome -->
       <h2>Welcome to WashU ACM</h2><br>
       <p>ACM, the Association for Computing Machinery, is an international scientific and educational organization dedicated to advancing the arts, sciences, and applications of information technology. Here at Washington University we strive to be a resource for everyone, student, faculty, and staff, who has an interest in computing or computer science. </p>
       <br><br>
-      <h3>Coming Events</h3>
+      <!-- Heading: Upcoming Events -->
+      <h3>Upcoming Events</h3>
       <ul>
         <li>Dev Team Regular Meeting</li>
-        <li>Thursday Tech Talk about Python programming by Roger Iyengar</li>
+        <li>Tuesday Tech Talk | Python: 0 to production</li>
         <li>EnWeek ACM Showcase</li>
         <li>Invited Speaker: Richard Stallman</li>
       </ul>
