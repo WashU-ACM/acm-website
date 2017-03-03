@@ -24,7 +24,7 @@
       <ul>
         <li>EnWeek ACM Showcase | <b>Oculus Rift</b></li>
         <li>Invited Speaker | <b>Free Software Movement</b></li>
-        <li>Fireside Talk | <b>Spring 2017 Fireside Talk</b></li>
+        <li>ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b></li>
       </ul>
       <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p><br>
       <h3>Useful Tools</h3>

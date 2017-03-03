@@ -27,7 +27,7 @@ class EventsController extends Controller
 								"description" => "The famous Richard Stallman is coming to Wash U, and give us a speech about the free software movement!",
 						),
 						array(
-								"name" => "Fireside Talk | <b>Spring 2017 Fireside Talk</b>",
+								"name" => "ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b>",
 								"tag" => "Fireside",
 								"poster" => NULL,
 								"speaker" => "TBD",
