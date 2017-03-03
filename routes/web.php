@@ -15,14 +15,16 @@ $app->get('/', function (){
     return view('welcome');
 });
 
-$app->get('/events', function (){
+$app->get('/events/', function (){
     return view('events');
 });
 
-$app->get('/icpc', function (){
+$app->get('/icpc/', function (){
     return view('icpc');
 });
 
-$app->get('/officers', function (){
+$app->get('/officers/', function (){
     return view('officers');
 });
+
+$app->get('/projects/', 'ProjectsController@show');
