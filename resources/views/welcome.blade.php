@@ -17,18 +17,24 @@
   <div class="row">
     <div class="col-md-8">
       <!-- Heading: Welcome -->
-      <h2>Welcome to WashU ACM</h2><br>
-      <p>ACM, the Association for Computing Machinery, is an international scientific and educational organization dedicated to advancing the arts, sciences, and applications of information technology. Here at Washington University we strive to be a resource for everyone, student, faculty, and staff, who has an interest in computing or computer science. </p>
-      <br><br>
+      <h2>Welcome to WashU ACM</h2>
+      <p>ACM, the Association for Computing Machinery, is an international scientific and educational organization dedicated to advancing the arts, sciences, and applications of information technology. Here at Washington University we strive to be a resource for everyone, student, faculty, and staff, who has an interest in computing or computer science. </p><br>
       <!-- Heading: Upcoming Events -->
       <h3>Upcoming Events</h3>
       <ul>
-        <li>ACM Dev Team | <b>Master Command Line</b></li>
-        <li>Tuesday Tech Talk | <b>Python: 0 to production</b></li>
-        <li>EnWeek ACM Showcase</li>
-        <li>Invited Speaker: Richard Stallman</li>
+        <li>EnWeek ACM Showcase | <b>Oculus Rift</b></li>
+        <li>Invited Speaker | <b>Free Software Movement</b></li>
+        <li>Fireside Talk | <b>Spring 2017 Fireside Talk</b></li>
       </ul>
-      <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p>
+      <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p><br>
+      <h3>Useful Tools</h3>
+      <p>ACM projects that make the life easier for WashU students.</p>
+      <ul>
+        <li><b>Trade Meal Points</b></li>
+        <li><b>WebSTAC to Calendar</b></li>
+        <li><b>WURatings</b></li>
+      </ul>
+      <p><a class="btn btn-secondary" href="projects" role="button">View details &raquo;</a></p>
    </div>
     <div class="col-md-4">
       <div class="twitter-wrap">

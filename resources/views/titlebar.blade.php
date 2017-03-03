@@ -12,14 +12,14 @@
       <li class="nav-item{{Request::is('events')?' active':''}}">
         <a class="nav-link" href="events">Events</a>
       </li>
+      <li class="nav-item{{Request::is('projects')?' active':''}}">
+        <a class="nav-link" href="projects">Projects</a>
+      </li>
       <li class="nav-item{{Request::is('icpc')?' active':''}}">
         <a class="nav-link" href="icpc">ICPC</a>
       </li>
       <li class="nav-item{{Request::is('officers')?' active':''}}">
         <a class="nav-link" href="officers">Officers</a>
-      </li>
-      <li class="nav-item{{Request::is('projects')?' active':''}}">
-        <a class="nav-link" href="projects">Projects</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="mailto:acm@wustl.edu">Contact</a>
