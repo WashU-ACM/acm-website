@@ -15,9 +15,9 @@ $app->get('/', function (){
     return view('welcome');
 });
 
-$app->get('/events/', function (){
-    return view('events');
-});
+$app->get('/events/', 'EventsController@show');
+
+$app->get('/projects/', 'ProjectsController@show');
 
 $app->get('/icpc/', function (){
     return view('icpc');
@@ -26,5 +26,3 @@ $app->get('/icpc/', function (){
 $app->get('/officers/', function (){
     return view('officers');
 });
-
-$app->get('/projects/', 'ProjectsController@show');
