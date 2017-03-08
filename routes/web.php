@@ -27,4 +27,4 @@ $app->get('/officers/', function (){
     return view('officers');
 });
 
-$app->get('/sitemap', 'SitemapController@index');
+$app->get('/sitemap/', 'SitemapController@index');
