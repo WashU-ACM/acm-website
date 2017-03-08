@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 class EventsController extends Controller
 {
 
-		public function show()
+		public function index()
 		{
 				$upcomings = array(
 						array(

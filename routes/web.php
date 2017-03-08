@@ -15,9 +15,9 @@ $app->get('/', function (){
     return view('welcome');
 });
 
-$app->get('/events/', 'EventsController@show');
+$app->get('/events/', 'EventsController@index');
 
-$app->get('/projects/', 'ProjectsController@show');
+$app->get('/projects/', 'ProjectsController@index');
 
 $app->get('/icpc/', function (){
     return view('icpc');
@@ -26,3 +26,5 @@ $app->get('/icpc/', function (){
 $app->get('/officers/', function (){
     return view('officers');
 });
+
+$app->get('/sitemap/', 'SitemapController@index');

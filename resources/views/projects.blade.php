@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'WashU ACM Events')
+@section('title', 'WashU ACM Projects')
 
 @section('content')
 <div class="container">
