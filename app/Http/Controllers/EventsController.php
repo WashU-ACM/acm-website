@@ -9,7 +9,7 @@ class EventsController extends Controller
 		{
 				$upcomings = array(
 						array(
-								"name" => "EnWeek ACM Showcase | <b>Oculus Rift</b>",
+								"name" => "EnWeek ACM Showcase | <b>Oculus Rift Demo</b>",
 								"tag" => "Demo",
 								"poster" => NULL,
 								"speaker" => "Han Liu &amp; Zach Glick",
