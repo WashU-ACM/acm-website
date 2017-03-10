@@ -10,86 +10,13 @@
   <!-- Example row of columns -->
 	<br>
   <div class="row">
-    <div class="col-md-3">
-			<img src="/images/officers/elliott.jpg" alt="Elliott Battle" class="img-thumbnail">
-      <h4>Elliott Battle</h4>
-			<h5><span class="text-muted">Co-President</span></h5>
-    </div>
-    <div class="col-md-3">
-			<img src="/images/officers/roger.jpg" alt="Roger Iyengar" class="img-thumbnail">
-      <h4>Roger Iyengar</h4>
-			<h5><span class="text-muted">Co-President</span></h5>
-    </div>
-    <div class="col-md-3">
-			<img src="/images/officers/ryan.jpg" alt="Ryan Wan" class="img-thumbnail">
-      <h4>Ryan Wan</h4>
-			<h5><span class="text-muted">Treasurer</span></h5>
-   	</div>
-		<div class="col-md-3">
-			<img src="/images/officers/isaias.jpg" alt="Isaias Suarez" class="img-thumbnail">
-			<h4>Isaias Suarez</h4>
-			<h5><span class="text-muted">Events</span></h5>
-		</div>
-		<div class="col-md-3">
-		 <img src="/images/officers/zach.jpg" alt="Zach Glick" class="img-thumbnail">
-		 <h4>Zach Glick</h4>
-		 <h5><span class="text-muted">Events</span></h5>
-		</div>
-		<div class="col-md-3">
-			<img src="/images/officers/han.jpg" alt="Han Liu" class="img-thumbnail">
-      <h4>Han Liu</h4>
-			<h5><span class="text-muted">Tech Director</span></h5>
-    </div>
-    <div class="col-md-3">
-			<img src="/images/officers/peter.jpg" alt="Peter Olson" class="img-thumbnail">
-      <h4>Peter Olson</h4>
-			<h5><span class="text-muted">Publicity</span></h5>
-    </div>
-    <div class="col-md-3">
-			<img src="/images/officers/aaron.jpg" alt="Aaron Handleman" class="img-thumbnail">
-      <h4>Aaron Handleman</h4>
-			<h5><span class="text-muted">Publicity</span></h5>
-   	</div>
-		<div class="col-md-3">
-			<img src="/images/officers/julia.jpg" alt="Julia Vogl" class="img-thumbnail">
-			<h4>Julia Vogl</h4>
-			<h5><span class="text-muted">Publicity</span></h5>
-		</div>
-		<div class="col-md-3">
-		 <img src="/images/officers/jackie.jpg" alt="Jackie Wong" class="img-thumbnail">
-		 <h4>Jackie Wong</h4>
-		 <h5><span class="text-muted">Freshman Outreach</span></h5>
-		</div>
-		<div class="col-md-3">
-			<img src="/images/officers/joey.jpg" alt="Joseph(Joey) Ch Woodson" class="img-thumbnail">
-			<h4>Joseph(Joey) Ch Woodson</h4>
-			<h5><span class="text-muted">ICPC</span></h5>
-		</div>
-		<div class="col-md-3">
-			<img src="/images/officers/john.jpg" alt="John Xiahou"  class="img-thumbnail">
-			<h4>John Xiahou</h4>
-			<h5><span class="text-muted">ICPC</span></h5>
-		</div>
-		<div class="col-md-3">
-			<img src="/images/officers/rohit.jpg" alt="Rohit Kumar"  class="img-thumbnail">
-			<h4>Rohit Kumar</h4>
-			<h5><span class="text-muted">Secretary</span></h5>
-		</div>
-		<div class="col-md-3">
-			<img src="/images/officers/noah.jpg" alt="Noah Luddy"  class="img-thumbnail">
-			<h4>Noah Luddy</h4>
-			<h5><span class="text-muted">Historian</span></h5>
-		</div>
-		<div class="col-md-3">
-			<img src="/images/officers/dennis.jpg" alt="Dennis Cosgrove"  class="img-thumbnail">
-			<h4>Dennis Cosgrove</h4>
-			<h5><span class="text-muted">Faculty advisor</span></h5>
-		</div>
-		<div class="col-md-3">
-			<img src="/images/officers/david.jpg" alt="David Ayeke"  class="img-thumbnail">
-			<h4>David Ayeke</h4>
-			<h5><span class="text-muted">Eternal President &amp; Supreme Leader-for-Life</span></h5>
-		</div>
+		@foreach ($officers as $officer)
+			<div class="col-md-3">
+				<img src={!! $officer["image"] !!} alt={!! $officer["name"] !!} class="img-thumbnail">
+				<h4>{!! $officer["name"] !!}</h4>
+				<h5><span class="text-muted">{!! $officer["title"] !!}</span></h5>
+			</div>
+		@endforeach
 	</div>
 	<br>
 	@include('footer')

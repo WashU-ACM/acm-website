@@ -23,8 +23,6 @@ $app->get('/icpc/', function (){
     return view('icpc');
 });
 
-$app->get('/officers/', function (){
-    return view('officers');
-});
+$app->get('/officers/', 'OfficersController@index');
 
 $app->get('/sitemap/', 'SitemapController@index');
