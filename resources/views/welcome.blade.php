@@ -22,7 +22,6 @@
       <!-- Heading: Upcoming Events -->
       <h3>Upcoming Events</h3>
       <ul>
-        <li>EnWeek ACM Showcase | <b>Oculus Rift Demo</b></li>
         <li>ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b></li>
         <li>Invited Speaker | <b>Free Software Movement</b></li>
       </ul>

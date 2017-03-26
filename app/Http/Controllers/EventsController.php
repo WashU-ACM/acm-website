@@ -9,15 +9,6 @@ class EventsController extends Controller
 		{
 				$upcomings = array(
 						array(
-								"name" => "EnWeek ACM Showcase | <b>Oculus Rift Demo</b>",
-								"tag" => "Demo",
-								"poster" => NULL,
-								"speaker" => "Han Liu &amp; Zach Glick",
-								"date" => "Friday 3/24 @ 5pm",
-								"location" => "DUC",
-								"description" => "Han and Zach are going to give a oculus rift demo during EnWeek after spring break. Come and check it out!",
-						),
-						array(
 								"name" => "ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b>",
 								"tag" => "Fireside",
 								"poster" => NULL,
@@ -38,7 +29,35 @@ class EventsController extends Controller
 				);
 
 				// TODO: update past events
-				$pasts = array();
+				$pasts = array(
+					array(
+							"name" => "EnWeek ACM Showcase | <b>Oculus Rift Demo</b>",
+							"tag" => "Demo",
+							"poster" => NULL,
+							"speaker" => "Han Liu &amp; Zach Glick",
+							"date" => "Friday 3/24 @ 5pm",
+							"location" => "Tisch Commons @ DUC",
+							"description" => "Han and Zach are going to give a oculus rift demo during EnWeek after spring break. Come and check it out!",
+					),
+					array(
+							"name" => "ACM Dev Team | <b>Master Command Line",
+							"tag" => "Dev Team",
+							"poster" => "images/events/dt.png",
+							"speaker" => "Isaias Suarez",
+							"date" => "Saturday 2/25 @ 4-6 PM",
+							"location" => "Gregg Technology Center(GTC) @ South 40 STS",
+							"description" => "Learn how to be a master of command line. Tips and tricks to speed up your work flow.",
+					),
+					array(
+							"name" => "Tuesday Tech Talk | <b>Python: 0 to production",
+							"tag" => "T3",
+							"poster" => "images/events/t3.png",
+							"speaker" => "Roger Iyengar",
+							"date" => "Tuesday 2/28 @ 7 PM",
+							"location" => "Gregg Technology Center(GTC) @ South 40 STS",
+							"description" => "Roger is going to give you a tour through the lovely Python programming language. Going from 0 to production. Real practical staffs that you should never miss.",
+					),
+				);
 
 				return view('events', ['pasts' => $pasts, 'upcomings' => $upcomings]);
 		}
