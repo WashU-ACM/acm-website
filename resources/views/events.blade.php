@@ -9,7 +9,7 @@
 	<!-- Section: Upcoming -->
 	<h2>Upcoming</h2>
 	<div class="list-group">
-		@foreach ($upcomings as $upcoming)
+		@foreach ($upcomings as $i => $upcoming)
 		<div class="list-group-item list-group-item-action flex-column align-items-start">
 			<div class="d-flex w-100 justify-content-between">
 				<h5 class="mb-1">{!! $upcoming["name"] !!}</b></h5>
@@ -18,11 +18,11 @@
 			<div class="media">
 				@unless (!isset($upcoming["poster"]))
 				<!-- Image -->
-				<a class="d-flex align-self-center mr-3" role="button" data-toggle="modal"  data-target="#modal-1">
+				<a class="d-flex align-self-center mr-3" role="button" data-toggle="modal"  data-target="#upcoming-modal-{{ $i }}">
 					<img src="{{ $upcoming["poster"] }}" height="204.8" width="158.2">
 				</a>
 				<!-- Modal -->
-				<div id="modal-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div id="upcoming-modal-{{ $i }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
@@ -58,7 +58,7 @@
 	<!-- Section: Past -->
 	<h2>Past</h2>
 	<div class="list-group">
-		@foreach ($pasts as $past)
+		@foreach ($pasts as $i => $past)
 		<div class="list-group-item list-group-item-action flex-column align-items-start">
 			<div class="d-flex w-100 justify-content-between">
 				<h5 class="mb-1">{!! $past["name"] !!}</b></h5>
@@ -67,11 +67,11 @@
 			<div class="media">
 				@unless (!isset($past["poster"]))
 				<!-- Image -->
-				<a class="d-flex align-self-center mr-3" role="button" data-toggle="modal"  data-target="#modal-1">
+				<a class="d-flex align-self-center mr-3" role="button" data-toggle="modal"  data-target="#past-modal-{{ $i }}">
 					<img src="{{ $past["poster"] }}" height="204.8" width="158.2">
 				</a>
 				<!-- Modal -->
-				<div id="modal-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div id="past-modal-{{ $i }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
