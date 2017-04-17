@@ -22,8 +22,6 @@
       <!-- Heading: Upcoming Events -->
       <h3>Upcoming Events</h3>
       <ul>
-        <li>Course Registration Discussion | <b>Fall 2017 Course Spoiler</b></li>
-        <li>ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b></li>
         <li>Invited Speaker | <b>Richard Stallman: Free Software Movement</b></li>
       </ul>
       <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p><br>

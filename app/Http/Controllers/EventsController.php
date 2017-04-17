@@ -9,27 +9,9 @@ class EventsController extends Controller
 		{
 				$upcomings = array(
 						array(
-								"name" => "Course Registration Discussion | <b>Fall 2017 Course Spoiler</b>",
-								"tag" => "CRD",
-								"poster" => "images/events/crd.png",
-								"speaker" => "ACM Senior Course Critics",
-								"date" => "Tuesday April 4th @ 6 pm",
-								"location" => "Gregg Technology Center(GTC) @ South 40 STS",
-								"description" => "<b>Hear about courses from those who have taken them. </b>Before you make a choice about what courses to take in the Fall, come to Course Registration Discussion! Former students and TA's will give you their opinion on the courses being offered next year and the professors teaching them. We will go through ALL FALL 2017 COURSES!!! There will be free food!",
-						),
-						array(
-								"name" => "ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b>",
-								"tag" => "Fireside",
-								"poster" => "images/events/fs.png",
-								"speaker" => "Dr. Guerin &amp; Dr. Cytron",
-								"date" => "Thursday April 6th @ 6pm",
-								"location" => "Atrium @ Jolley 5th floor",
-								"description" => "<b>Come for the Maggiano's, Stay for the Chat. </b>Members of the department (like Dr. Cytron and Dr. Guerin) will be there to discuss what's upcoming in the CSE department and to answer any questions students may have. There will also be free food from Maggiano's!",
-						),
-						array(
 								"name" => "Invited Speaker | <b>Richard Stallman: Free Software Movement</b>",
 								"tag" => "Invited",
-								"poster" => NULL,
+								"poster" => "images/events/rs.png",
 								"speaker" => "Richard Stallman",
 								"date" => "Tuesday April 18th @ 7pm",
 								"location" => "Tisch Commons @ DUC",
@@ -39,6 +21,24 @@ class EventsController extends Controller
 
 				// TODO: update past events
 				$pasts = array(
+					array(
+							"name" => "ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b>",
+							"tag" => "Fireside",
+							"poster" => "images/events/fs.png",
+							"speaker" => "Dr. Guerin &amp; Dr. Cytron",
+							"date" => "Thursday April 6th @ 6pm",
+							"location" => "Atrium @ Jolley 5th floor",
+							"description" => "<b>Come for the Maggiano's, Stay for the Chat. </b>Members of the department (like Dr. Cytron and Dr. Guerin) will be there to discuss what's upcoming in the CSE department and to answer any questions students may have. There will also be free food from Maggiano's!",
+					),
+					array(
+							"name" => "Course Registration Discussion | <b>Fall 2017 Course Spoiler</b>",
+							"tag" => "CRD",
+							"poster" => "images/events/crd.png",
+							"speaker" => "ACM Senior Course Critics",
+							"date" => "Tuesday April 4th @ 6 pm",
+							"location" => "Gregg Technology Center(GTC) @ South 40 STS",
+							"description" => "<b>Hear about courses from those who have taken them. </b>Before you make a choice about what courses to take in the Fall, come to Course Registration Discussion! Former students and TA's will give you their opinion on the courses being offered next year and the professors teaching them. We will go through ALL FALL 2017 COURSES!!! There will be free food!",
+					),
 					array(
 							"name" => "EnWeek ACM Showcase | <b>Oculus Rift Demo</b>",
 							"tag" => "Demo",
