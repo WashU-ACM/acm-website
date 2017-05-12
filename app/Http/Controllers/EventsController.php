@@ -9,18 +9,27 @@ class EventsController extends Controller
 		{
 				$upcomings = array(
 						array(
-								"name" => "Workshop | <b>Game Development Tutorial</b>",
-								"tag" => "Workshop",
+								"name" => "GBM | <b>Fall 2017 General Body Meeting</b>",
+								"tag" => "GBM",
 								"poster" => NULL,
-								"speaker" => "Isaias Suarez",
-								"date" => "Saturday April 22th @ 4-6 PM",
-								"location" => "Gregg Technology Center(GTC) @ South 40 STS",
-								"description" => "Come learn to make video games in Unity and GameMaker. We will be hosting a game development tutorial on Saturday, April 22nd, from 4pm - 6pm in the Gregg Technology Center at the back of STS on the South 40. ",
+								"speaker" => "Peter Olson",
+								"date" => "TBD",
+								"location" => "TBD",
+								"description" => "Details coming after summer.",
 						),
 				);
 
 				// TODO: update past events
 				$pasts = array(
+					array(
+							"name" => "Workshop | <b>Game Development Tutorial</b>",
+							"tag" => "Workshop",
+							"poster" => NULL,
+							"speaker" => "Isaias Suarez",
+							"date" => "Saturday April 22th @ 4-6 PM",
+							"location" => "Gregg Technology Center(GTC) @ South 40 STS",
+							"description" => "Come learn to make video games in Unity and GameMaker. We will be hosting a game development tutorial on Saturday, April 22nd, from 4pm - 6pm in the Gregg Technology Center at the back of STS on the South 40. ",
+					),
 					array(
 							"name" => "Invited Speaker | <b>Richard Stallman: Free Software Movement</b>",
 							"tag" => "Invited",
