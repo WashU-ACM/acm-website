@@ -22,7 +22,7 @@
       <!-- Heading: Upcoming Events -->
       <h3>Upcoming Events</h3>
       <ul>
-        <li>Workshop | <b>Game Development Tutorial</b></li>
+        <li>GBM | <b>Fall 2017 General Body Meeting</b></li>
       </ul>
       <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p><br>
       <h3>Useful Tools</h3>
