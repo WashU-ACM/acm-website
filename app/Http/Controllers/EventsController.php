@@ -12,10 +12,10 @@ class EventsController extends Controller
 								"name" => "GBM | <b>Fall 2017 General Body Meeting</b>",
 								"tag" => "GBM",
 								"poster" => NULL,
-								"speaker" => "Peter Olson",
+								"speaker" => "TBD",
 								"date" => "TBD",
 								"location" => "TBD",
-								"description" => "Details coming after summer.",
+								"description" => "Details coming soon.",
 						),
 				);
 

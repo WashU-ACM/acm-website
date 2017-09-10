@@ -25,4 +25,6 @@ $app->get('/icpc/', function (){
 
 $app->get('/officers/', 'OfficersController@index');
 
+$app->get('/join/', 'JoinController@index');
+
 $app->get('/sitemap/', 'SitemapController@index');

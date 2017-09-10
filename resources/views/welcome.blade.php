@@ -6,9 +6,10 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="container">
-    <h1 class="display-3">Hello, world! We are WashU ACM.</h1>
-    <p>We are the Washington University in St. Louis' chapter of ACM, the Association for Computing Machinery. </p>
-    <p><a class="btn btn-primary btn-md" href="https://www.acm.org/" role="button">Learn more about ACM &raquo;</a></p>
+    <h1 class="display-3">Hello, world! We are <b>WashU ACM.</b></h1>
+    <p>We are the <a href="https://wustl.edu" style="color:inherit"><b>Washington University in St. Louis'</b></a> chapter of ACM, the Association for Computing Machinery.</p>
+    <p> Every semester, we organize all sorts of events: Tuesday/Thursday Tech Talks, Programming Competition, Intership Panel, Course Registration Discussion, <br> and Fireside Chat with CSE department heads and professors. We welcome every student with interest in computing or computer science. Come and join us to get notified of our news and upcoming events! </p>
+    <p><a class="btn btn-primary btn-md" href="/join" role="button">Join Us !! &raquo;</a></p>
   </div>
 </div>
 
