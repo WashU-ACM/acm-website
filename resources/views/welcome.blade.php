@@ -9,7 +9,7 @@
     <h1 class="display-3">Hello, world! We are <b>WashU ACM.</b></h1>
     <p>We are the <a href="https://wustl.edu" style="color:inherit"><b>Washington University in St. Louis'</b></a> chapter of ACM, the Association for Computing Machinery.</p>
     <p> Every semester, we organize all sorts of events: Tuesday/Thursday Tech Talks, Programming Competition, Intership Panel, Course Registration Discussion, and Fireside Chat with CSE department faculties. We welcome every student with interest in computing or computer science. Come and join us to get notified of our news and upcoming events! </p>
-    <p><a class="btn btn-primary btn-md" href="/icpc" role="button">Hear about ACM ICPC &raquo;</a></p>
+    <p><a class="btn btn-primary btn-md" href="/icpc" role="button">Hear about ACM-ICPC &raquo;</a></p>
   </div>
 </div>
 

@@ -22,7 +22,7 @@
         <a class="nav-link" href="officers">Officers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="mailto:acm@wustl.edu">Contact</a>
+        <a class="nav-link" href="mailto:acm@su.wustl.edu">Contact</a>
       </li>
     </ul>
   </div>
