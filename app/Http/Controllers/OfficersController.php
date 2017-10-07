@@ -7,7 +7,7 @@ class OfficersController extends Controller
 
     public function index()
     {
-      $officers = array(
+      $officer = array(
 					array(
 						"name" => "Elliott Battle",
 						"title" => "Co-President",
@@ -89,7 +89,7 @@ class OfficersController extends Controller
 						"image" => "/images/officers/david.jpg",
 					),
 				);
-
+      $officers = app('db') -> select("SELECT * FROM officer ORDER BY display_order ASC;");
       return view('officers', ['officers' => $officers]);
     }
 

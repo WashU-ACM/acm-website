@@ -12,10 +12,10 @@ class EventsController extends Controller
 								"name" => "GBM | <b>Fall 2017 General Body Meeting</b>",
 								"tag" => "GBM",
 								"poster" => NULL,
-								"speaker" => "TBD",
-								"date" => "TBD",
-								"location" => "TBD",
-								"description" => "Details coming soon.",
+								"speaker" => "Rohit Kumar",
+								"date" => "Tuesday September 26th @ 6-7 PM",
+								"location" => "Room 204 @ Seigle Hall",
+								"description" => "General Body Meeting for the fall semester! Come to know about what ACM is, what do we do, and what resources you can get from us.",
 						),
 				);
 
