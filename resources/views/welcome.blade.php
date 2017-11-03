@@ -28,7 +28,7 @@
           $upcomings = json_decode(json_encode($upcomings), True);
         @endphp
         @foreach ($upcomings as $upcoming)
-          <li>{!! $upcoming !!}</li>
+          <li>{!! $upcoming['title'] !!}</li>
         @endforeach
       </ul>
       <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p><br>
