@@ -86,9 +86,9 @@ class EventsController extends Controller
 				$upcomings = app('db') -> select("SELECT * FROM users WHERE date >= NOW() ORDER BY date ASC;");
 				$upcomings = json_decode(json_encode($upcomings), True);
 				foreach ($upcoming as $upcomings) {
-					$date = $upcoming["date"]
-					$datestr = date_format($date, 'l, F d s @ h A')
-					$upcoming["date"] = $datestr
+					$date = $upcoming["date"];
+					$datestr = date_format($date, 'l, F d s @ h A');
+					$upcoming["date"] = $datestr;
 				}
 				return view('events', ['pasts' => $pasts, 'upcomings' => $upcomings]);
 		}
