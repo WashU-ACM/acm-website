@@ -12,7 +12,7 @@
 		@foreach ($upcomings as $i => $upcoming)
 		<div class="list-group-item list-group-item-action flex-column align-items-start">
 			<div class="d-flex w-100 justify-content-between">
-				<h5 class="mb-1">{!! $upcoming["title"] !!}</b></h5>
+				<h5 class="mb-1">{!! $upcoming["title"] !!}</h5>
 				<h5><span class="badge badge-default">{!! $upcoming["tag"] !!}</span></h5>
 			</div>
 			<div class="media">
@@ -38,9 +38,9 @@
 						<dd class="col-sm-12"><br></dd>
 						<dt class="col-sm-2 offset-sm-1">Speaker</dt>
 						<dd class="col-sm-9">{!! $upcoming["speaker"] !!}</dd>
-
+						
 						<dt class="col-sm-2 offset-sm-1">Date &amp; Time</dt>
-						<dd class="col-sm-9">{!! $upcoming["date"] !!}</dd>
+						<dd class="col-sm-9">{!! date('l F jS @ h A',strtotime($upcoming["date"])) !!}</dd>
 
 						<dt class="col-sm-2 offset-sm-1">Location</dt>
 						<dd class="col-sm-9">{!! $upcoming["location"] !!}</dd>

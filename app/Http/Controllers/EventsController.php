@@ -11,7 +11,7 @@ class EventsController extends Controller
 				// TODO: update past events
 				$pasts = array(
 					array(
-							"name" => "GBM | <b>Fall 2017 General Body Meeting</b>",
+							"title" => "GBM | <b>Fall 2017 General Body Meeting</b>",
 							"tag" => "GBM",
 							"poster" => NULL,
 							"speaker" => "Rohit Kumar",
@@ -20,7 +20,7 @@ class EventsController extends Controller
 							"description" => "General Body Meeting for the fall semester! Come to know about what ACM is, what do we do, and what resources you can get from us.",
 					),
 					array(
-							"name" => "Workshop | <b>Game Development Tutorial</b>",
+							"title" => "Workshop | <b>Game Development Tutorial</b>",
 							"tag" => "Workshop",
 							"poster" => NULL,
 							"speaker" => "Isaias Suarez",
@@ -29,7 +29,7 @@ class EventsController extends Controller
 							"description" => "Come learn to make video games in Unity and GameMaker. We will be hosting a game development tutorial on Saturday, April 22nd, from 4pm - 6pm in the Gregg Technology Center at the back of STS on the South 40. ",
 					),
 					array(
-							"name" => "Invited Speaker | <b>Richard Stallman: Free Software Movement</b>",
+							"title" => "Invited Speaker | <b>Richard Stallman: Free Software Movement</b>",
 							"tag" => "Invited",
 							"poster" => "images/events/rs.png",
 							"speaker" => "Richard Stallman",
@@ -38,7 +38,7 @@ class EventsController extends Controller
 							"description" => "<b>\"Free Software and Your Freedom!\" </b>We're excited to bring in Richard Stallman on Tuesday, April 18th as part of the Trending Topics Lecture Series! Richard Matthew Stallman is a software developer and software freedom activist. He is also the founder of the GNU Project, the Free Software Foundation, and One True Emacs. ",
 					),
 					array(
-							"name" => "ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b>",
+							"title" => "ACM Fireside Chat | <b>Spring 2017 Fireside Chat</b>",
 							"tag" => "Fireside",
 							"poster" => "images/events/fs.png",
 							"speaker" => "Dr. Guerin &amp; Dr. Cytron",
@@ -47,7 +47,7 @@ class EventsController extends Controller
 							"description" => "<b>Come for the Maggiano's, Stay for the Chat. </b>Members of the department (like Dr. Cytron and Dr. Guerin) will be there to discuss what's upcoming in the CSE department and to answer any questions students may have. There will also be free food from Maggiano's!",
 					),
 					array(
-							"name" => "Course Registration Discussion | <b>Fall 2017 Course Spoiler</b>",
+							"title" => "Course Registration Discussion | <b>Fall 2017 Course Spoiler</b>",
 							"tag" => "CRD",
 							"poster" => "images/events/crd.png",
 							"speaker" => "ACM Senior Course Critics",
@@ -56,7 +56,7 @@ class EventsController extends Controller
 							"description" => "<b>Hear about courses from those who have taken them. </b>Before you make a choice about what courses to take in the Fall, come to Course Registration Discussion! Former students and TA's will give you their opinion on the courses being offered next year and the professors teaching them. We will go through ALL FALL 2017 COURSES!!! There will be free food!",
 					),
 					array(
-							"name" => "EnWeek ACM Showcase | <b>Oculus Rift Demo</b>",
+							"title" => "EnWeek ACM Showcase | <b>Oculus Rift Demo</b>",
 							"tag" => "Demo",
 							"poster" => NULL,
 							"speaker" => "Han Liu &amp; Zach Glick",
@@ -65,7 +65,7 @@ class EventsController extends Controller
 							"description" => "Han and Zach are going to give a oculus rift demo during EnWeek after spring break. Come and check it out!",
 					),
 					array(
-							"name" => "Tuesday Tech Talk | <b>Python: 0 to production",
+							"title" => "Tuesday Tech Talk | <b>Python: 0 to production",
 							"tag" => "T3",
 							"poster" => "images/events/t3.png",
 							"speaker" => "Roger Iyengar",
@@ -74,7 +74,7 @@ class EventsController extends Controller
 							"description" => "Roger is going to give you a tour through the lovely Python programming language. Going from 0 to production. Real practical staffs that you should never miss.",
 					),
 					array(
-							"name" => "ACM Dev Team | <b>Master Command Line",
+							"title" => "ACM Dev Team | <b>Master Command Line",
 							"tag" => "Dev Team",
 							"poster" => "images/events/dt.png",
 							"speaker" => "Isaias Suarez",
@@ -83,13 +83,8 @@ class EventsController extends Controller
 							"description" => "Learn how to be a master of command line. Tips and tricks to speed up your work flow.",
 					),
 				);
-				$upcomings = app('db') -> select("SELECT * FROM users WHERE date >= NOW() ORDER BY date ASC;");
+				$upcomings = app('db') -> select("SELECT * FROM events WHERE date >= NOW() ORDER BY date ASC;");
 				$upcomings = json_decode(json_encode($upcomings), True);
-				foreach ($upcoming as $upcomings) {
-					$date = $upcoming["date"];
-					$datestr = date_format($date, 'l, F d s @ h A');
-					$upcoming["date"] = $datestr;
-				}
 				return view('events', ['pasts' => $pasts, 'upcomings' => $upcomings]);
 		}
 
