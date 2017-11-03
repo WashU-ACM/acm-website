@@ -7,20 +7,18 @@ class EventsController extends Controller
 
 		public function index()
 		{
-				$upcomings = array(
-						array(
-								"name" => "GBM | <b>Fall 2017 General Body Meeting</b>",
-								"tag" => "GBM",
-								"poster" => NULL,
-								"speaker" => "Rohit Kumar",
-								"date" => "Tuesday September 26th @ 6-7 PM",
-								"location" => "Room 204 @ Seigle Hall",
-								"description" => "General Body Meeting for the fall semester! Come to know about what ACM is, what do we do, and what resources you can get from us.",
-						),
-				);
 
 				// TODO: update past events
 				$pasts = array(
+					array(
+							"name" => "GBM | <b>Fall 2017 General Body Meeting</b>",
+							"tag" => "GBM",
+							"poster" => NULL,
+							"speaker" => "Rohit Kumar",
+							"date" => "Tuesday September 26th @ 6-7 PM",
+							"location" => "Room 204 @ Seigle Hall",
+							"description" => "General Body Meeting for the fall semester! Come to know about what ACM is, what do we do, and what resources you can get from us.",
+					),
 					array(
 							"name" => "Workshop | <b>Game Development Tutorial</b>",
 							"tag" => "Workshop",
@@ -85,7 +83,13 @@ class EventsController extends Controller
 							"description" => "Learn how to be a master of command line. Tips and tricks to speed up your work flow.",
 					),
 				);
-
+				$upcomings = app('db') -> select("SELECT * FROM users WHERE date >= NOW() ORDER BY date ASC;");
+				$upcomings = json_decode(json_encode($upcomings), True);
+				foreach ($upcoming as $upcomings) {
+					$date = $upcoming["date"]
+					$datestr = date_format($date, 'l, F d s @ h A')
+					$upcoming["date"] = $datestr
+				}
 				return view('events', ['pasts' => $pasts, 'upcomings' => $upcomings]);
 		}
 

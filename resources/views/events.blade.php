@@ -12,7 +12,7 @@
 		@foreach ($upcomings as $i => $upcoming)
 		<div class="list-group-item list-group-item-action flex-column align-items-start">
 			<div class="d-flex w-100 justify-content-between">
-				<h5 class="mb-1">{!! $upcoming["name"] !!}</b></h5>
+				<h5 class="mb-1">{!! $upcoming["title"] !!}</b></h5>
 				<h5><span class="badge badge-default">{!! $upcoming["tag"] !!}</span></h5>
 			</div>
 			<div class="media">
@@ -61,7 +61,7 @@
 		@foreach ($pasts as $i => $past)
 		<div class="list-group-item list-group-item-action flex-column align-items-start">
 			<div class="d-flex w-100 justify-content-between">
-				<h5 class="mb-1">{!! $past["name"] !!}</b></h5>
+				<h5 class="mb-1">{!! $past["title"] !!}</b></h5>
 				<h5><span class="badge badge-default">{!! $past["tag"] !!}</span></h5>
 			</div>
 			<div class="media">
