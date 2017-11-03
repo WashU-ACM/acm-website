@@ -23,8 +23,13 @@
       <!-- Heading: Upcoming Events -->
       <h3>News and Events</h3>
       <ul>
-        <li>ICPC | <b>ACM-ICPC Qualifier @ WashU</b></li>
-        <li>GBM | <b>Fall 2017 General Body Meeting</b></li>
+        @php
+          $upcomings = app('db') -> select("SELECT title FROM events WHERE date >= NOW() ORDER BY date ASC;");
+          $upcomings = json_decode(json_encode($upcomings), True);
+        @endphp
+        @foreach ($upcomings as $upcoming)
+          <li>{!! $upcoming !!}</li>
+        @endforeach
       </ul>
       <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p><br>
       <h3>Useful Tools</h3>
