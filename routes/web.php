@@ -27,4 +27,6 @@ $app->get('/officers/', 'OfficersController@index');
 
 $app->get('/join/', 'JoinController@index');
 
+$app->post('/join/', 'JoinController@store');
+
 $app->get('/sitemap/', 'SitemapController@index');

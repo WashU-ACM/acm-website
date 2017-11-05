@@ -24,6 +24,9 @@
       <li class="nav-item">
         <a class="nav-link" href="mailto:acm@su.wustl.edu">Contact</a>
       </li>
+      <li class="nav-item{{Request::is('join')?' active':''}}">
+        <a class="nav-link" href="join">Join</a>
+      </li>
     </ul>
   </div>
 </nav>
