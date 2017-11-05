@@ -34,7 +34,7 @@
           <li>{!! $upcoming['title'] !!}</li>
         @endforeach
       </ul>
-      <p><a class="btn btn-secondary" href="events" role="button">View details &raquo;</a></p><br>
+      <p><a class="btn btn-outline-primary" href="events" role="button">View details &raquo;</a></p><br>
       <h3>Useful Tools</h3>
       <p>ACM projects that make the life easier for WashU students.</p>
       <ul>
@@ -42,7 +42,7 @@
         <li><b>WebSTAC to Calendar</b></li>
         <li><b>WURatings</b></li>
       </ul>
-      <p><a class="btn btn-secondary" href="projects" role="button">View details &raquo;</a></p>
+      <p><a class="btn btn-outline-primary" href="projects" role="button">View details &raquo;</a></p>
    </div>
     <div class="col-md-4">
       <div class="twitter-wrap">
