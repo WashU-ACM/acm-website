@@ -38,11 +38,26 @@ class JoinController extends Controller
                         'AFFIL' => $inputs['affil']
                     ],
                     'interests' => [
-                        'de9694ca48' => isset($inputs['intern']),
                         '7fbd5e46fa' => isset($inputs['exec'])
                     ]
                 ]
             ]);
+
+            if (isset($inputs['exec'])) {
+                $client->request('POST', 'lists/f5217515f7/members/', [
+                    'auth' => ['user', $api_key],
+                    'json' => [
+                        'email_address' => $inputs['email'],
+                        'status' => "subscribed",
+                        'merge_fields' => [
+                            'FNAME' => $inputs['fname'],
+                            'LNAME' => $inputs['lname'],
+                            'GRADYEAR' => $inputs['gradyear'],
+                            'AFFIL' => $inputs['affil']
+                        ]
+                    ]
+                ]);
+            }
 
             if ($inputs['fname'] === "") {
                 $message = "You have been subscribed. Welcome!";
@@ -57,7 +72,6 @@ class JoinController extends Controller
                     try {
                         $client->request('PATCH', 'lists/e5947d8009/members/' . md5($inputs['email']), [
                             'auth' => ['user', $api_key],
-                            'status' => "subscribed",
                             'json' => [
                                 'status' => "subscribed",
                                 'merge_fields' => [
@@ -67,11 +81,25 @@ class JoinController extends Controller
                                     'AFFIL' => $inputs['affil']
                                 ],
                                 'interests' => [
-                                    'de9694ca48' => isset($inputs['intern']),
                                     '7fbd5e46fa' => isset($inputs['exec'])
                                 ]
                             ]
                         ]);
+
+                        if (isset($inputs['exec'])) {
+                            $client->request('PATCH', 'lists/f5217515f7/members/' . md5($inputs['email']), [
+                                'auth' => ['user', $api_key],
+                                'json' => [
+                                    'status' => "subscribed",
+                                    'merge_fields' => [
+                                        'FNAME' => $inputs['fname'],
+                                        'LNAME' => $inputs['lname'],
+                                        'GRADYEAR' => $inputs['gradyear'],
+                                        'AFFIL' => $inputs['affil']
+                                    ]
+                                ]
+                            ]);
+                        }
 
                         if ($inputs['fname'] === "") {
                             $message = 'Hi, your subscription status has been updated!';

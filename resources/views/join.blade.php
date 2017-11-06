@@ -55,12 +55,6 @@
               </label>
               <div class="form-check">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" name='intern'>
-                  Internship and Job Opportunities
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
                   <input class="form-check-input" type="checkbox" name='exec'>
                   Becoming an Exec Member
                 </label>
