@@ -8,7 +8,7 @@ class EventsController extends Controller
 		public function index()
 		{
 
-				// TODO: update past events
+				// TODO: add past events into the database
 				$pasts = array(
 					array(
 							"title" => "GBM | <b>Fall 2017 General Body Meeting</b>",
@@ -83,6 +83,8 @@ class EventsController extends Controller
 							"description" => "Learn how to be a master of command line. Tips and tricks to speed up your work flow.",
 					),
 				);
+        $pasts = app('db') -> select("SELECT * FROM events WHERE date < NOW() ORDER BY date DESC;");
+        $pasts = json_decode(json_encode($pasts), True);
 				$upcomings = app('db') -> select("SELECT * FROM events WHERE date >= NOW() ORDER BY date ASC;");
 				$upcomings = json_decode(json_encode($upcomings), True);
 				return view('events', ['pasts' => $pasts, 'upcomings' => $upcomings]);
