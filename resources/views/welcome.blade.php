@@ -19,7 +19,7 @@
 <div class="container">
   <!-- Example row of columns -->
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <!-- Heading: Welcome -->
       <h2>Welcome to WashU ACM</h2>
       <p>ACM, the Association for Computing Machinery, is an international scientific and educational organization dedicated to advancing the arts, sciences, and applications of information technology. Here at Washington University we strive to be a resource for everyone, student, faculty, and staff, who has an interest in computing or computer science. </p><br>
@@ -44,10 +44,6 @@
       </ul>
       <p><a class="btn btn-outline-primary" href="projects" role="button">View details &raquo;</a></p>
    </div>
-    <div class="col-md-4">
-      <div class="twitter-wrap">
-      <a class="twitter-timeline" href="https://twitter.com/WashUACM">Tweets by WashUACM</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-    </div>
   </div>
 
   @include('footer')
