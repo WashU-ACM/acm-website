@@ -21,11 +21,8 @@
         <li class="nav-item{{Request::is('officers')?' active':''}}">
           <a class="nav-link" href="officers">Officers</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mailto:acm@su.wustl.edu">Contact</a>
-        </li>
         <li class="nav-item{{Request::is('join')?' active':''}}">
-          <a class="nav-link" href="join">Join</a>
+          <a class="nav-link" href="join">Join / Contact</a>
         </li>
       </ul>
     </div>

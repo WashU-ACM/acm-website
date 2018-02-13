@@ -7,16 +7,28 @@
   <h1>Joining WashU ACM</h1>
   <br>
   <div class="container">
-      <h5 class="row justify-content-md-center">
-        Leave your email below to join us and get notified of the trending news and upcoming events!
+      <h5>
+        ACM welcome any student with interest in computing or computer science.
+        To get notified of the trending news and upcoming events,
+        leave your email below and join us on Slack at
+        <a href="https://join.slack.com/t/acm-17-18/signup">
+          https://join.slack.com/t/acm-17-18/signup</a>!
       </h5>
+      <br>
+      <div class="row justify-content-md-center">
+        <h6>
+          If you have any question/suggestion/idea of events, just send an email to
+          <a href="mailto:acm@su.wustl.edu">
+            acm@su.wustl.edu</a> :)
+        </h6>
+      </div>
       <br>
       <div class="container">
         <div class="row justify-content-md-center">
           <form method="post">
             <div class="form-group">
               <label class="form-label" for="email">Email:</label>
-              <input type="email" class="form-control" name="email" placeholder="acm@wustl.edu" required>
+              <input type="email" class="form-control" name="email" placeholder="acm@su.wustl.edu" required>
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="row">
