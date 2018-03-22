@@ -19,14 +19,14 @@
 				@unless (!isset($upcoming["poster"]))
 				<!-- Image -->
 				<a class="d-flex align-self-center mr-3" role="button" data-toggle="modal"  data-target="#upcoming-modal-{{ $i }}">
-					<img src="{{ $upcoming["poster"] }}" height="204.8" width="158.2">
+					<img src="/images/events/{{ $upcoming["poster"] }}" height="204.8" width="158.2">
 				</a>
 				<!-- Modal -->
 				<div id="upcoming-modal-{{ $i }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg" role="document">
 						<div class="modal-content">
 							<div class="modal-body">
-								<img src="{{ $upcoming["poster"] }}" height="auto" width="100%">
+								<img src="/images/events/{{ $upcoming["poster"] }}" height="auto" width="100%">
 							</div>
 						</div>
 					</div>
