@@ -24,6 +24,9 @@
         <li class="nav-item{{Request::is('join')?' active':''}}">
           <a class="nav-link" href="join">Join / Contact</a>
         </li>
+        <li class="nav-item{{Request::is('join')?' active':''}}">
+          <a class="nav-link" href="hack">HACKATHON!!</a>
+        </li>
       </ul>
     </div>
   </div>

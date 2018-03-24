@@ -29,4 +29,8 @@ $app->get('/join/', 'JoinController@index');
 
 $app->post('/join/', 'JoinController@store');
 
+$app->get('/hack/', function (){
+  return view('hack');
+});
+
 $app->get('/sitemap/', 'SitemapController@index');
