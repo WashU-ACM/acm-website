@@ -12,7 +12,7 @@
 	<h2>Hackathon by WashU ACM</h2>
 	<p>WashU ACM will host a hackathon! Participation is welcome to all WashU students. Please complete the registration form below. Come and have fun programming!!</p>
   <ul>
-    <li>Location & Time: Hillman 060, 11:00AM - 5:00PM</li>
+    <li>Location & Time: Hillman 060, 11:00AM - 5:00PM, March 31</li>
     <li>Featuring: Free food, snacks, and prizes - including a Google Mini Home and more!</li>
   </ul>
   <br>
