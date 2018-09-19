@@ -7,7 +7,12 @@ class ProjectsController extends Controller
 
     public function index()
     {
-      $results = app('db')->select("SELECT * FROM projects;");
+      try {
+        app('db') -> connection() -> getPdo();
+        $results = app('db')->select("SELECT * FROM projects;");
+      } catch (\PDOException $e) {
+        $results = [];
+      }
       return view('projects', ['projects' => $results]);
     }
 
