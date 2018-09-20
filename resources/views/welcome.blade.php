@@ -30,7 +30,7 @@
           try {
             app('db') -> connection() -> getPdo();
             $upcomings = app('db') ->
-              select("SELECT title FROM events WHERE date >= NOW() ORDER BY date ASC;");
+              select("SELECT title FROM events WHERE date >= NOW() - INTERVAL 6 HOUR ORDER BY date ASC;");
             $upcomings = json_decode(json_encode($upcomings), True);
           } catch (\PDOException $e) {
             $upcomings = [];

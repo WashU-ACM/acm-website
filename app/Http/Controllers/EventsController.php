@@ -87,7 +87,7 @@ class EventsController extends Controller
           app('db') -> connection() -> getPdo();
           $pasts = app('db') -> select("SELECT * FROM events WHERE date < NOW() ORDER BY date DESC;");
           $pasts = json_decode(json_encode($pasts), True);
-          $upcomings = app('db') -> select("SELECT * FROM events WHERE date >= NOW() ORDER BY date ASC;");
+          $upcomings = app('db') -> select("SELECT * FROM events WHERE date >= NOW() - INTERVAL 6 HOUR ORDER BY date ASC;");
           $upcomings = json_decode(json_encode($upcomings), True);
         } catch (\PDOException $e) {
           $pasts = [];
