@@ -9,9 +9,9 @@
         <li class="nav-item{{Request::is('/')?' active':''}}">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item{{Request::is('events')?' active':''}}">
+        <!-- <li class="nav-item{{Request::is('events')?' active':''}}">
           <a class="nav-link" href="events">Events</a>
-        </li>
+        </li> -->
         <li class="nav-item{{Request::is('projects')?' active':''}}">
           <a class="nav-link" href="projects">Projects</a>
         </li>
@@ -21,12 +21,12 @@
         <li class="nav-item{{Request::is('officers')?' active':''}}">
           <a class="nav-link" href="officers">Officers</a>
         </li>
-        <li class="nav-item{{Request::is('join')?' active':''}}">
+        <!-- <li class="nav-item{{Request::is('join')?' active':''}}">
           <a class="nav-link" href="join">Join / Contact</a>
-        </li>
-        <li class="nav-item{{Request::is('join')?' active':''}}">
+        </li> -->
+        <!-- <li class="nav-item{{Request::is('join')?' active':''}}">
           <a class="nav-link" href="hack">HACKATHON!!</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
