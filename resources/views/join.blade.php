@@ -7,13 +7,13 @@
   <h1>Joining WashU ACM</h1>
   <br>
   <div class="container">
-      <h5>
+      <!-- <h5>
         ACM welcome any student with interest in computing or computer science.
         To get notified of the trending news and upcoming events,
         leave your email below and join us on Slack at
         <a href="https://join.slack.com/t/acm-17-18/signup">
           https://join.slack.com/t/acm-17-18/signup</a>!
-      </h5>
+      </h5> -->
       <br>
       <div class="row justify-content-md-center">
         <h6>
