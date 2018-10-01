@@ -103,7 +103,7 @@
       <h3>Calendar</h3>
       <p><iframe src="https://calendar.google.com/calendar/embed?src=1n3706c7gs5pdm7f05htfp5k58%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe></p><br>
 
-      <h3>Join/Contact Us</h3><br>
+      <!-- <h3>Join/Contact Us</h3><br>
       <div class = "row">
         <form method="post">
           <div class="form-group">
@@ -155,7 +155,7 @@
           <br>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-      </div>
+      </div> -->
 
       <br>
       <div class="row justify-content-md-center">
