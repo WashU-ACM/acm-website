@@ -5,7 +5,7 @@
 			<a href="https://wustl.edu/"><img src="/images/washu_black.svg" alt="WashU" height=30 width=30></a>
 		</div>
 		<div class="col-md-4">
-			<p class="text-center">2017 &copy; WashU ACM </p>
+			<p class="text-center">2019 &copy; WashU ACM </p>
 		</div>
 		<div class="col-md-4" style="text-align:right">
 			<a href="https://github.com/WashU-ACM"><img src="/images/github_black.svg" alt="github" height=25 width=25></a>
