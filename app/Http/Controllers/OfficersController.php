@@ -91,7 +91,7 @@ class OfficersController extends Controller
         );
       try {
         app('db') -> connection() -> getPdo();
-        $officers = app('db') -> select("SELECT * FROM officer WHERE year='2018' ORDER BY display_order ASC;");
+        $officers = app('db') -> select("SELECT * FROM officer WHERE year='2019' ORDER BY display_order ASC;");
       } catch (\PDOException $e) {
         $officers = [];
       }
